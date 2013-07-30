@@ -22,9 +22,9 @@ $tText=$tweetCursor->getNext()["text"];
 
 
 
-echo "mmJSONP({ photoURL : ";
+echo "mmJSONP({ photoURL :'";
 echo $fUrl;
-echo " , tweetText: ";
+echo "' , tweetText:'";
 echo $tText;
-echo "});"
+echo "'});"
 ?>
