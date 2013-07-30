@@ -30,11 +30,15 @@ $tText=$tweetCursor->getNext()["text"];
 <head>
 	<meta charset="UTF-8">
 	<title>Mountain Motivation - Let the Words Lift Your Spirit</title>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+	<link rel="stylesheet" href="./mountainMotivation.css" />
 </head>
 <body>
-	<figure id="superimpose">
-	  <img src="<?php echo $fUrl ?>" alt="mountain landscape" />
-	  <caption><?php echo $tText ?></caption>
-	</figure>
+	  
+	  <div id="tweetFrame"><?php echo $tText ?></div>
+	  <script type="text/javascript">
+	    $("#tweetFrame").backstretch("<?php echo $fUrl ?>");
+	  </script>
 </body>
 </html>
