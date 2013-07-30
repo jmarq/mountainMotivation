@@ -14,8 +14,9 @@ var processReply=function(res){
   for(photo in photoList){
     entry=photoList[photo];
     entry.random=Math.random();
+    entry._id=entry.id;
     console.log(entry);
-    c.insert(entry); 
+    c.save(entry); 
   }
   console.log("added photos, are they showing up?");
   setTimeout(function(){process.exit()},1000);

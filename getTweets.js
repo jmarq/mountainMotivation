@@ -18,7 +18,8 @@ var processReply = function(rep){
   for(tweet in rep.statuses){
     entry=rep.statuses[tweet];
     entry.random=Math.random();
-    c.insert(entry);
+    entry._id=entry.id;
+    c.save(entry);
   }  
   console.log("added entries, are they showing up?");
   setTimeout(function(){process.exit();},1000);//this seems dumb, why does this work?
