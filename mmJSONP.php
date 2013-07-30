@@ -19,6 +19,7 @@ $which=rand(0,$tCount-1);
 $tweetCursor=$tweetC->find();
 $tweetCursor->skip($which);
 $tText=$tweetCursor->getNext()["text"];
+$tText=htmlspecialchars($tText);
 
 
 
