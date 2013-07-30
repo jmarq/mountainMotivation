@@ -8,6 +8,9 @@ Okay so what we're gonna do is grab tweets with #motivation and slap them onto p
 
 I need api keys to make the requests, and I can't expose them to the client. I can use python, node, php, etc
 
+the keys are to be stored in a file called twitKeys.js in a json object with
+consumer_key, consumer_secret, access_token, and access_token_secret as keys with their corresponding string values
+
 the api calls could be made in response to client requests, or made periodically (or one-time) on the server and held in some sort of data store.
 
 node with twit library for easy authenticated twitter calls seems like a good option.
