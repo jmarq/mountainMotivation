@@ -23,7 +23,7 @@ $tText=$tweetCursor->getNext()["text"];
 
 
 echo "mmJSONP({ photoURL : ";
-echo $fURL;
+echo $fUrl;
 echo " , tweetText: ";
 echo $tText;
 echo "});"
