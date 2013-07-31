@@ -1,7 +1,7 @@
 //api key for flickr should be stored in a file in this same directory 
 //    called flickrKey.js in a variable called flickrKey
 
-require("./flickrKey.js");
+require("./.flickrKey.js");
 
 mongo=require("mongoskin");
 db=mongo.db("localhost:27017/mm");

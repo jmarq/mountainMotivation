@@ -4,7 +4,7 @@
 //during testing i'm probably slamming duplicate tweets into the db.
 //upsert maybe?
 
-require("./twitKeys.js");
+require("./.twitKeys.js");
 mongo=require("mongoskin");
 
 
