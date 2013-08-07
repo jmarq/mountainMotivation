@@ -16,7 +16,12 @@ var processReply=function(res){
     entry.random=Math.random();
     entry._id=entry.id;
     console.log(entry);
-    c.save(entry); 
+    if(entry.url_l){
+      c.save(entry);
+    } 
+    else{
+      console.log("no url!  Can't add to database");
+    }
   }
   console.log("added photos, are they showing up?");
   setTimeout(function(){process.exit()},1000);
